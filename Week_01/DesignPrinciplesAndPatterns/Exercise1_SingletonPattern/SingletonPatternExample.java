@@ -19,6 +19,7 @@ public class SingletonPatternExample {
             }
             return instance;
         }
+
         //Simple Method to print log message
         public void log(String message) {
             System.out.println("Log: " + message);

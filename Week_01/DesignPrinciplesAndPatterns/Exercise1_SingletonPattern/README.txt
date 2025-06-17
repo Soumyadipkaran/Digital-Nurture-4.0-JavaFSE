@@ -11,7 +11,7 @@ Why we use it:
 
 How it works (in simple steps):
 1. The constructor is made private – so we can't create object from outside.
-2. We create a private static variable that will store the single object.
+2. I create a private static variable that will store the single object.
 3. A public static method is used to give that single object whenever needed.
    → If the object doesn’t exist, it creates one.
    → If it already exists, it gives the existing one.
