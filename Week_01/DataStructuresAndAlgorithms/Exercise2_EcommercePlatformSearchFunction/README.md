@@ -1,72 +1,78 @@
 # E-Commerce Platform Search Function (Java)
 
-## Problem Statement
+## What the Task Was
 
-This project is based on a task where we need to build a simple search system for an e-commerce platform. The goal is to allow users to search for products by their names in a fast and efficient way.
+We had to build a simple search system for an e-commerce platform in Java.  
+The goal was to help users find products by name in a fast and efficient way.
 
-The project should include:
-
-1. Understanding algorithm efficiency using Big O notation
-2. Creating a `Product` class with necessary fields
-3. Implementing two search methods: linear search and binary search
-4. Comparing the performance of both methods and explaining which is better for an e-commerce platform
-
----
-
-## What I Understood
-
-### What is Big O Notation?
-
-Big O notation is used to describe how fast an algorithm runs based on the size of the input. It helps in analyzing the performance of code.
-
-- **O(n)** means the time taken increases linearly with the number of items. (used in linear search)
-- **O(log n)** means the time taken increases slowly even when the input is large. (used in binary search)
-
-### Best, Average, and Worst Case
-
-- **Best Case:** The item is found immediately.
-- **Average Case:** The item is found somewhere in the middle.
-- **Worst Case:** The item is found at the end or not found at all.
+The task involved:
+1. Understanding how algorithm performance works (Big O notation)
+2. Creating a `Product` class with productId, productName, and category
+3. Writing two search methods: Linear Search and Binary Search
+4. Comparing their performance and explaining which one is better
 
 ---
 
-## How I Implemented
+## What I Learned (Understanding the Theory)
 
-### Step 1: Created a Product class
+### Big O Notation (How Fast an Algorithm Is)
 
-I created a class called `Product` that has the following fields:
+Big O helps us understand how much time an algorithm takes as the number of items grows.
+
+- **O(n)** – Linear Search: Checks one by one. Slower for large lists.
+- **O(log n)** – Binary Search: Cuts the list in half each time. Much faster, but needs sorted data.
+
+### Best / Average / Worst Case
+
+- **Best Case**: Found the item immediately
+- **Average Case**: Found somewhere in the middle
+- **Worst Case**: Found at the end or not at all
+
+---
+
+## How I Implemented It
+
+### Step 1: Product Class
+
+I made a class called `Product` with three things:
 - `productId`
 - `productName`
 - `category`
 
-This class also has a constructor to set values and a `toString()` method to print product details easily.
-
-### Step 2: Wrote Linear Search
-
-Linear search goes through each product one by one and checks if the name matches the search term.  
-It works even if the list is **not sorted**.
-
-### Step 3: Wrote Binary Search
-
-Binary search is faster but only works on **sorted data**.  
-So before binary search, I sorted the product list by name.  
-Then I implemented the binary search method using standard logic with `low`, `high`, and `mid`.
-
-### Step 4: Added Products and Tested
-
-I added 7 sample products in the main method.  
-Then I tested both search methods using the target `"Backpack"`.
+Also added a constructor and a `toString()` method to print product details easily.
 
 ---
 
-## Java Code File
+### Step 2: Linear Search
 
-The code is saved in one file:  
-**`ECommerceSearch.java`**
+- I wrote a method that goes through each product one by one
+- If the name matches (ignoring case), it returns the product
+- Simple, but slow for big lists
+- Works without sorting
 
-This file contains:
-- The `Product` class
-- The `ECommerceSearch` class
-- Both search methods
-- A `main()` method to test them
+---
 
+### Step 3: Binary Search
+
+- Binary search is faster but only works on sorted data
+- First, I sorted the product array by name (ignoring case)
+- Then used a standard binary search method with `low`, `high`, and `mid` pointers
+- If matched, return the product
+
+---
+
+### Step 4: Testing the Code
+
+In the `main()` method:
+- I added 7 sample products like "Laptop", "Shoes", "Backpack", etc.
+- Then I searched for `"Backpack"` using both methods
+- Printed the result if found, or "Product not found" if not
+
+---
+
+## Output Example
+Linear Search Result:
+ID: 107, Name: Backpack, Category: Bags
+
+Binary Search Result:
+ID: 107, Name: Backpack, Category: Bags
