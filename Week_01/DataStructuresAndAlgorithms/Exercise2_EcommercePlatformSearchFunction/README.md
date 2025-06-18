@@ -1,4 +1,4 @@
-# E-Commerce Platform Search Function (Java)
+# Exercise 2 : E-Commerce Platform Search Function (Java)
 
 ## What the Task Was
 

@@ -7,7 +7,7 @@ public class SingletonPatternExample {
         // Holds the single instance
         private static Logger instance;
 
-        // Private constructor - cannot create from outside
+        // Private constructor cannot create from outside
         private Logger() {
             System.out.println("Logger instance created.");
         }

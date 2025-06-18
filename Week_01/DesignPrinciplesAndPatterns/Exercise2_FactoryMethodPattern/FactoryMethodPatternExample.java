@@ -1,6 +1,6 @@
 // package Exercise2_FactoryMethodPattern;
 
-// Step 2: Define separate interfaces for each document type
+// Define separate interfaces for each document type
 interface WordDocument {
     void display();
 }
@@ -13,7 +13,7 @@ interface ExcelDocument {
     void display();
 }
 
-// Step 3: Concrete classes that implement those interfaces
+// Concrete classes that implement those interfaces
 class MyWordDocument implements WordDocument {
     public void display() {
         System.out.println("This is a Word Document.");
@@ -32,7 +32,7 @@ class MyExcelDocument implements ExcelDocument {
     }
 }
 
-// Step 4: Abstract factory
+//Abstract factory
 abstract class DocumentFactory {
     public abstract Object createDocument();
 }
@@ -56,7 +56,7 @@ class ExcelFactory extends DocumentFactory {
     }
 }
 
-// Step 5: Test class
+//Test class
 public class FactoryMethodPatternExample {
     public static void main(String[] args) {
         // class to test the Factory Method Pattern
@@ -75,4 +75,3 @@ public class FactoryMethodPatternExample {
         excel.display();
     }
 }
-
