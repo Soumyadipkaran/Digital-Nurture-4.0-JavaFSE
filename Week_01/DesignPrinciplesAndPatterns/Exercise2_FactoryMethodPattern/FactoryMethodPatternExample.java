@@ -1,6 +1,4 @@
-// package Exercise2_FactoryMethodPattern;
-
-// Define separate interfaces for each document type
+//Separate interfaces for each doc type
 interface WordDocument {
     void display();
 }
@@ -13,7 +11,7 @@ interface ExcelDocument {
     void display();
 }
 
-// Concrete classes that implement those interfaces
+// Concrete classes that implement this interfaces
 class MyWordDocument implements WordDocument {
     public void display() {
         System.out.println("This is a Word Document.");

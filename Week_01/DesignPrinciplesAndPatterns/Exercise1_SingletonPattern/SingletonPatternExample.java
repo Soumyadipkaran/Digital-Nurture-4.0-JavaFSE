@@ -1,10 +1,8 @@
-// package Exercise1_SingletonPattern;
-
 public class SingletonPatternExample {
 
-    // Singleton Logger class inside the main class
+    //Logger class
     static class Logger {
-        // Holds the single instance
+        //single instance
         private static Logger instance;
 
         // Private constructor cannot create from outside
@@ -12,7 +10,7 @@ public class SingletonPatternExample {
             System.out.println("Logger instance created.");
         }
 
-        // Returns the single instance (creates if not exists)
+        // Returns the single instance
         public static Logger getInstance() {
             if (instance == null) {
                 instance = new Logger();
@@ -20,13 +18,13 @@ public class SingletonPatternExample {
             return instance;
         }
 
-        //Simple Method to print log message
+        //print log message
         public void log(String message) {
             System.out.println("Log: " + message);
         }
     }
 
-    // Main method to test Singleton
+    //Test Singleton
     public static void main(String[] args) {
         Logger logger1 = Logger.getInstance();
         logger1.log("First log from logger1");

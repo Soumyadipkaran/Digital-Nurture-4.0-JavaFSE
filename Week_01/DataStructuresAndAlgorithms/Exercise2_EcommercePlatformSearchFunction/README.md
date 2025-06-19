@@ -11,7 +11,6 @@ The task involved:
 3. Writing two search methods: Linear Search and Binary Search
 4. Comparing their performance and explaining which one is better
 
----
 
 ## What I Learned (Understanding the Theory)
 
@@ -28,7 +27,6 @@ Big O helps us understand how much time an algorithm takes as the number of item
 - **Average Case**: Found somewhere in the middle
 - **Worst Case**: Found at the end or not at all
 
----
 
 ## How I Implemented It
 
@@ -41,7 +39,6 @@ I made a class called `Product` with three things:
 
 Also added a constructor and a `toString()` method to print product details easily.
 
----
 
 ### Step 2: Linear Search
 
@@ -50,7 +47,6 @@ Also added a constructor and a `toString()` method to print product details easi
 - Simple, but slow for big lists
 - Works without sorting
 
----
 
 ### Step 3: Binary Search
 
@@ -59,7 +55,6 @@ Also added a constructor and a `toString()` method to print product details easi
 - Then used a standard binary search method with `low`, `high`, and `mid` pointers
 - If matched, return the product
 
----
 
 ### Step 4: Testing the Code
 
@@ -68,7 +63,6 @@ In the `main()` method:
 - Then I searched for `"Backpack"` using both methods
 - Printed the result if found, or "Product not found" if not
 
----
 
 ## Output Example
 Linear Search Result:

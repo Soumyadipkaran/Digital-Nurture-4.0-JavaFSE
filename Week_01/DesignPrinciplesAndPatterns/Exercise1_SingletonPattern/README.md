@@ -9,7 +9,6 @@ The goal is to make sure that:
 - The same instance is used everywhere in the application.
 - This helps in keeping the logging consistent and avoids creating multiple logger objects.
 
----
 
 ## What I Understood
 
@@ -26,7 +25,6 @@ We use this when:
 - Use a `static` variable to hold the single instance.
 - Provide a `static method` (usually `getInstance()`) to return that single object.
 
----
 
 ## How I Implemented It
 

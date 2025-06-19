@@ -9,7 +9,6 @@ We need to create a system that can generate different types of documents like:
 
 The system should use the **Factory Method Design Pattern** so that object creation is organized and flexible.
 
----
 
 ## What I Understood
 
@@ -19,7 +18,6 @@ The system should use the **Factory Method Design Pattern** so that object creat
 - Instead of creating objects manually, we use factory classes to do the job.
 - This helps in better code organization and makes it easy to manage different types of objects.
 
----
 
 ## How I Implemented It
 

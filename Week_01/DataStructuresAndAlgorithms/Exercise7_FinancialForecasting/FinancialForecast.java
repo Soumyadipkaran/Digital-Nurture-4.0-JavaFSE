@@ -1,8 +1,7 @@
 public class FinancialForecast {
-
-    // Recursive method to calculate future value
+    // Recursion
     public static double futureValue(double currentValue, double growthRate, int years) {
-        // Base condition
+        // Base case
         if (years == 0) {
             return currentValue;
         }
@@ -13,7 +12,7 @@ public class FinancialForecast {
     public static void main(String[] args) {
         double currentValue = 10000;    // Starting value
         double growthRate = 0.10;       // 10% annual growth rate
-        int years = 3;                  // Number of years to forecast
+        int years = 3;                  // Number of years
 
         double result = futureValue(currentValue, growthRate, years);
 

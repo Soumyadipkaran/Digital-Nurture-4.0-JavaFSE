@@ -5,7 +5,6 @@
 We are asked to create a financial forecasting tool that predicts future values based on past data.  
 The focus is on understanding and using **recursion** to solve the problem.
 
----
 
 ## What I Understood from the Question
 
@@ -19,7 +18,6 @@ To find future value after 3 years, we can calculate:
 
 We can solve this using recursion instead of repeating the formula manually.
 
----
 
 ### 2. What We Need to Do (Steps from the Question)
 
@@ -32,7 +30,6 @@ We can solve this using recursion instead of repeating the formula manually.
 - Print the forecasted future value.
 - Analyze how recursion works and how we can optimize it if needed.
 
----
 
 ## How I Implemented It
 
