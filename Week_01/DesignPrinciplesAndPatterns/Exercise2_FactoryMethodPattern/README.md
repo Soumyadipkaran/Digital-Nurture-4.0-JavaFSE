@@ -7,8 +7,6 @@ We need to create a system that can generate different types of documents like:
 - PDF Document
 - Excel Document
 
-The system should use the **Factory Method Design Pattern** so that object creation is organized and flexible.
-
 
 ## What I Understood
 
@@ -21,7 +19,7 @@ The system should use the **Factory Method Design Pattern** so that object creat
 
 ## How I Implemented It
 
-### 1. Interfaces for Document Types
+### Interfaces for Document Types
 I created separate interfaces:
 - `WordDocument`
 - `PdfDocument`
@@ -29,10 +27,10 @@ I created separate interfaces:
 
 Each interface has a `display()` method.
 
-### 2. Concrete Classes
+### Concrete Classes
 Then I created classes like `MyWordDocument`, `MyPdfDocument`, and `MyExcelDocument` that implement the above interfaces.
 
-### 3. Factory Classes
+### Factory Classes
 I made an abstract class `DocumentFactory` with a method `createDocument()`.
 
 Then I created separate factories:
@@ -42,10 +40,8 @@ Then I created separate factories:
 
 Each one overrides `createDocument()` to return the appropriate document.
 
-### 4. Main Test Class
+### Main Test Class
 In the `main()` method, I tested the factories by:
 - Creating each document using the factory
 - Calling the `display()` method to check output
 - Verifying that everything works as expected
-
-

@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-// Product class to store product details
 class Product {
     int productId;
     String productName;
@@ -51,7 +50,7 @@ public class ECommerceSearch {
     }
 
     public static void main(String[] args) {
-        // List of products
+
         Product[] products = {
             new Product(105, "Laptop", "Electronics"),
             new Product(101, "Shoes", "Fashion"),
