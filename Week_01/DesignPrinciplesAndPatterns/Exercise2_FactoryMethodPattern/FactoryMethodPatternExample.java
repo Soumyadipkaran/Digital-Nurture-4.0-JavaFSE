@@ -1,4 +1,3 @@
-//Separate interfaces for each doc type
 interface WordDocument {
     void display();
 }
@@ -11,7 +10,7 @@ interface ExcelDocument {
     void display();
 }
 
-// Concrete classes that implement this interfaces
+//implement this interfaces
 class MyWordDocument implements WordDocument {
     public void display() {
         System.out.println("This is a Word Document.");
@@ -35,7 +34,7 @@ abstract class DocumentFactory {
     public abstract Object createDocument();
 }
 
-// Concrete factories returning specific document types
+// Returning specific document types
 class WordFactory extends DocumentFactory {
     public WordDocument createDocument() {
         return new MyWordDocument();
@@ -54,7 +53,6 @@ class ExcelFactory extends DocumentFactory {
     }
 }
 
-//Test class
 public class FactoryMethodPatternExample {
     public static void main(String[] args) {
         // class to test the Factory Method Pattern

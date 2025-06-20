@@ -1,8 +1,6 @@
 public class SingletonPatternExample {
 
-    //Logger class
     static class Logger {
-        //single instance
         private static Logger instance;
 
         // Private constructor cannot create from outside
@@ -10,7 +8,6 @@ public class SingletonPatternExample {
             System.out.println("Logger instance created.");
         }
 
-        // Returns the single instance
         public static Logger getInstance() {
             if (instance == null) {
                 instance = new Logger();
@@ -18,13 +15,12 @@ public class SingletonPatternExample {
             return instance;
         }
 
-        //print log message
+        //print msg
         public void log(String message) {
             System.out.println("Log: " + message);
         }
     }
 
-    //Test Singleton
     public static void main(String[] args) {
         Logger logger1 = Logger.getInstance();
         logger1.log("First log from logger1");
