@@ -12,10 +12,13 @@ Week_01/
 │   │   ├── SingletonPattern_Output.png
 │   │   └── README.md
 │   │
-│   └── Exercise2_FactoryMethodPattern/
-│       ├── FactoryMethodPatternExample.java
-│       ├── FactoryMethodPattern_Output.png
-│       └── README.md
+│   ├── Exercise2_FactoryMethodPattern/
+│   │   ├── FactoryMethodPatternExample.java 
+│   │   ├── FactoryMethodPattern_Output.png 
+│   │   └── README.md
+│   │
+│   └── ExtraExerciseOutsideMandatoryHandsOn/
+│       └── ... (Additional practice code/files)
 │
 └── DataStructuresAndAlgorithms/
     ├── Exercise2_EcommercePlatformSearchFunction/
@@ -23,45 +26,37 @@ Week_01/
     │   ├── ECommerceSearch_Output.png
     │   └── README.md
     │
-    └── Exercise7_FinancialForecasting/
-        ├── FinancialForecast.java
-        ├── FinancialForecast_Output.png
-        └── README.md
+    ├── Exercise7_FinancialForecasting/
+    │   ├── FinancialForecast.java
+    │   ├── FinancialForecast_Output.png
+    │   └── README.md
+    │
+    └── ExtraExerciseOutsideMandatoryHandsOn/
+        └── ... (Additional practice code/files)
+
 ```
 
-
-This week includes two main areas of learning:
+### This week, I worked on two main areas:
 
 1. Design Principles and Patterns  
 2. Data Structures and Algorithms
 
-Each topic contains hands-on exercises to help understand the concepts better.
+The following are the mandatory hands-on exercises.
 
+### Design Principles and Patterns (Mandatory Hands-on)
+- Exercise 1: Singleton Pattern  
+- Exercise 2: Factory Method Pattern  
 
-## Topics Covered
+#### (Additional practice done outside the mandatory hands-on)
+- Exercise 3: Implementing the Builder Pattern 
+- Exercise 4: Employee Management System  
 
-### 1. Design Principles and Patterns
+### Data Structures and Algorithms (Mandatory Hands-on)
+- Exercise 2: E-commerce Platform Search  
+- Exercise 7: Financial Forecasting  
 
-#### Exercise 1: Singleton Pattern  
-- Created a Logger class that allows only one instance.  
-- Used private constructor and static method to control object creation.  
-- Tested and confirmed that the same instance is used everywhere.
+#### (Additional practice done outside the mandatory hands-on)
+- Exercise 1: Inventory Management System 
+- Exercise 3: Sorting Customer Orders
 
-#### Exercise 2: Factory Method Pattern  
-- Created different document types like Word, PDF, and Excel.  
-- Used interfaces and separate factory classes to create each document.  
-- Demonstrated how objects can be created without exposing the creation logic.
-
-
-### 2. Data Structures and Algorithms
-
-#### Exercise 2: E-commerce Platform Search Function  
-- Created a Product class with basic details.  
-- Implemented both Linear Search and Binary Search.  
-- Compared their time complexity and found Binary Search to be faster when the list is sorted.
-
-#### Exercise 7: Financial Forecasting  
-- Implemented a recursive function to calculate future value.  
-- Used a growth rate and number of years as input.  
-- Discussed how recursion works and its time complexity.
-
+---
