@@ -49,7 +49,9 @@ The following are the mandatory hands-on exercises.
 
 #### (Additional practice done outside the mandatory hands-on)
 - Exercise 3: Implementing the Builder Pattern 
-- Exercise 4: Employee Management System  
+- Exercise 4: Employee Management System 
+- Exercise 6: Implementing the Proxy Pattern
+- Exercise 10: Implementing the MVC Pattern 
 
 ### Data Structures and Algorithms (Mandatory Hands-on)
 - Exercise 2: E-commerce Platform Search  
