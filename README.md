@@ -58,5 +58,7 @@ The following are the mandatory hands-on exercises.
 #### (Additional practice done outside the mandatory hands-on)
 - Exercise 1: Inventory Management System 
 - Exercise 3: Sorting Customer Orders
-
+- Exercise 4: Employee Management System
+- Exercise 5: Task Management System
+- Exercise 6: Library Management System
 ---
