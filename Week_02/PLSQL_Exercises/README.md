@@ -6,12 +6,21 @@ PLSQL_Exercises
 │   ├── scenario1_discount_interest.sql
 │   ├── scenario2_set_vip_flag.sql
 │   ├── scenario3_loan_reminder.sql
+│   ├── commonTables.txt
+│   └── README.md
+│
+├── Exercise2_ErrorHandling/
+│   ├── scenario1_safe_transfer_funds.sql
+│   ├── scenario2_update_salary.sql
+│   ├── scenario3_add_new_customer.sql
+│   ├── commonTables.txt
 │   └── README.md
 │
 ├── Exercise3_StoredProcedures/
 │   ├── scenario1_process_monthly_interest.sql
 │   ├── scenario2_update_employee_bonus.sql
 │   ├── scenario3_transfer_funds.sql
+│   ├── commonTables.txt
 │   └── README.md
 │
 └── README.md
@@ -19,6 +28,7 @@ PLSQL_Exercises
 
 This folder contains PL/SQL code for two exercises:
 
+## Mandatory Hands-On
 
 ## Exercise 1: Control Structures
 
@@ -36,3 +46,13 @@ Location: `Exercise1_ControlStructures/`
 - scenario3_transfer_funds.sql – Transfers money between accounts after balance check.
 
 Location: `Exercise3_StoredProcedures/`
+
+## Extra (Outside Mandatory Hands-On)
+
+## Exercise 2: Error Handling
+
+- scenario1_safe_transfer_funds.sql – Safely transfers funds between accounts with rollback on error.
+- scenario2_update_salary.sql – Updates salary for an employee and handles invalid ID errors.
+- scenario3_add_new_customer.sql – Adds a new customer; handles duplicates with proper error logging.
+
+Location: `Exercise2_ErrorHandling/`
