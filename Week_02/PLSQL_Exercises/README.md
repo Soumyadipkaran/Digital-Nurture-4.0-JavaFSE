@@ -20,6 +20,14 @@ PLSQL_Exercises
 │   ├── scenario3_transfer_funds.sql
 │   └── README.md
 │
+├── Exercise_4_Functions/
+│   ├── scenario1_calculate_age.sql
+│   ├── scenario2_calculate_monthly_installment.sql
+│   ├── scenario3_has_sufficient_balance.sql
+│   └── README.md
+│
+│
+├── Sample_Tables_Data.txt
 └── README.md
 ```
 
@@ -53,3 +61,11 @@ Location: `Exercise3_StoredProcedures/`
 - scenario3_add_new_customer.sql – Adds a new customer; handles duplicates with proper error logging.
 
 Location: `Exercise2_ErrorHandling/`
+
+## Exercise 4: Functions
+
+- scenario1_calculate_age.sql – Calculates age of a customer from date of birth.
+- scenario2_calculate_monthly_installment.sql – Calculates monthly installment based on loan amount, interest rate, and duration.
+- scenario3_has_sufficient_balance.sql – Checks if an account has sufficient balance for a transaction.
+
+Location: `Exercise4_Functions/`
