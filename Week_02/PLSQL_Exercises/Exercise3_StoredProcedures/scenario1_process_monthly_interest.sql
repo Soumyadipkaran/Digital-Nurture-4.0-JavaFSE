@@ -1,14 +1,14 @@
 CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest IS
 BEGIN
-   FOR acc IN ( SELECT account_id, balance
-      FROM accounts
-      WHERE account_type = 'SAVINGS') LOOP
+   FOR acc IN (SELECT AccountID, Balance FROM Accounts WHERE AccountType = 'Savings') LOOP
+      UPDATE Accounts
+      SET Balance = acc.Balance + (acc.Balance * 0.01),
+          LastModified = SYSDATE
+      WHERE AccountID = acc.AccountID;
 
-      UPDATE accounts
-      SET balance = balance + (acc.balance * 0.01)
-      WHERE account_id = acc.account_id;
-
+      DBMS_OUTPUT.PUT_LINE('Interest applied to Account ID: ' || acc.AccountID);
    END LOOP;
+
    COMMIT;
 END;
 /

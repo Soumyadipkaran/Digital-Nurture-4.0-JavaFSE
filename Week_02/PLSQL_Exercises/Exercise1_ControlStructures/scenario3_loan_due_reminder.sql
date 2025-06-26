@@ -1,10 +1,12 @@
 BEGIN
    FOR l IN (
-      SELECT loan_id, customer_id, due_date 
-      FROM loans 
-      WHERE due_date <= (SYSDATE + 30)) LOOP
-
-    DBMS_OUTPUT.PUT_LINE('Loan ' || l.loan_id || ' for customer ' || l.customer_id ||' is due on ' || TO_CHAR(l.due_date, 'DD-MON-YYYY'));
+      SELECT LoanID, CustomerID, EndDate
+      FROM Loans
+      WHERE EndDate BETWEEN SYSDATE AND SYSDATE + 30
+   ) LOOP
+      DBMS_OUTPUT.PUT_LINE('Reminder: Loan ID ' || l.LoanID ||
+                           ' for Customer ID ' || l.CustomerID ||
+                           ' is due on ' || TO_CHAR(l.EndDate, 'YYYY-MM-DD'));
    END LOOP;
 END;
 /

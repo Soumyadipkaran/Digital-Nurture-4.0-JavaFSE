@@ -6,21 +6,18 @@ PLSQL_Exercises
 │   ├── scenario1_discount_interest.sql
 │   ├── scenario2_set_vip_flag.sql
 │   ├── scenario3_loan_reminder.sql
-│   ├── commonTables.txt
 │   └── README.md
 │
 ├── Exercise2_ErrorHandling/
 │   ├── scenario1_safe_transfer_funds.sql
 │   ├── scenario2_update_salary.sql
 │   ├── scenario3_add_new_customer.sql
-│   ├── commonTables.txt
 │   └── README.md
 │
 ├── Exercise3_StoredProcedures/
 │   ├── scenario1_process_monthly_interest.sql
 │   ├── scenario2_update_employee_bonus.sql
 │   ├── scenario3_transfer_funds.sql
-│   ├── commonTables.txt
 │   └── README.md
 │
 └── README.md

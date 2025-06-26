@@ -1,15 +1,13 @@
 BEGIN
-   FOR c IN (SELECT customer_id, age FROM customers) LOOP
-      IF c.age > 60 THEN
-         UPDATE customers
-         SET interest_rate = interest_rate - 1
-         WHERE customer_id = c.customer_id;
+   FOR c IN (SELECT customer_id, DOB FROM Customers) LOOP
+      IF MONTHS_BETWEEN(SYSDATE, c.DOB)/12 > 60 THEN
+         UPDATE Loans
+         SET InterestRate = InterestRate - 1
+         WHERE CustomerID = c.customer_id;
 
-         DBMS_OUTPUT.PUT_LINE('Discount for customer ID: ' || c.customer_id);
+         DBMS_OUTPUT.PUT_LINE('Discount applied for Customer ID: ' || c.customer_id);
       END IF;
    END LOOP;
-
    COMMIT;
 END;
 /
-

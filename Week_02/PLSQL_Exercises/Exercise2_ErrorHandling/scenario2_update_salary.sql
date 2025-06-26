@@ -6,19 +6,22 @@ AS
     current_salary NUMBER;
 BEGIN
     -- Get current salary
-    SELECT salary INTO current_salary FROM Employees WHERE employee_id = emp_id;
+    SELECT Salary INTO current_salary FROM Employees WHERE EmployeeID = emp_id;
 
-    -- Increase salary
+    -- Update salary with bonus
     UPDATE Employees
-    SET salary = current_salary + (current_salary * percent / 100)
-    WHERE employee_id = emp_id;
+    SET Salary = current_salary + (current_salary * percent / 100)
+    WHERE EmployeeID = emp_id;
+
+    COMMIT;
 
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
         INSERT INTO ErrorLog (message, log_date)
-        VALUES ('Employee ID not found.', SYSDATE);
+        VALUES ('Employee ID ' || emp_id || ' not found.', SYSDATE);
     WHEN OTHERS THEN
         INSERT INTO ErrorLog (message, log_date)
-        VALUES ('Error in UpdateSalary: ' || SQLERRM, SYSDATE);
+        VALUES ('Error in UpdateSalary for ID ' || emp_id || ': ' || SQLERRM, SYSDATE);
+        ROLLBACK;
 END;
 /

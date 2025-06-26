@@ -1,33 +1,31 @@
 CREATE OR REPLACE PROCEDURE TransferFunds (
-   from_acc IN NUMBER,
-   to_acc IN NUMBER,
-   amt IN NUMBER) IS
-
-   sender_balance NUMBER;
-   
+   p_from_account IN NUMBER,
+   p_to_account IN NUMBER,
+   p_amount IN NUMBER
+) IS
+   v_balance NUMBER;
 BEGIN
-   -- balance of sender
-   SELECT balance INTO sender_balance
-   FROM accounts
-   WHERE account_id = from_acc;
+   -- Get balance of source acc
+   SELECT Balance INTO v_balance FROM Accounts WHERE AccountID = p_from_account;
 
-   -- Check if sender has enough amount
-   IF sender_balance >= amt THEN
-      
-      UPDATE accounts
-      SET balance = balance - amt
-      WHERE account_id = from_acc;
+   IF v_balance >= p_amount THEN
+      -- Deduct from source
+      UPDATE Accounts
+      SET Balance = Balance - p_amount,
+          LastModified = SYSDATE
+      WHERE AccountID = p_from_account;
 
-      
-      UPDATE accounts
-      SET balance = balance + amt
-      WHERE account_id = to_acc;
+      -- Add to destination
+      UPDATE Accounts
+      SET Balance = Balance + p_amount,
+          LastModified = SYSDATE
+      WHERE AccountID = p_to_account;
 
-      COMMIT;
-
-      DBMS_OUTPUT.PUT_LINE('Transfer successful.');
+      DBMS_OUTPUT.PUT_LINE('Transferred ' || p_amount || ' from Account ' || p_from_account || ' to Account ' || p_to_account);
    ELSE
-      DBMS_OUTPUT.PUT_LINE('Not enough amount.');
+      DBMS_OUTPUT.PUT_LINE('Insufficient balance in Account ' || p_from_account);
    END IF;
+
+   COMMIT;
 END;
 /
