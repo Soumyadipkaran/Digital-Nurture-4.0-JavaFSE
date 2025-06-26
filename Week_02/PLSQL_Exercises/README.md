@@ -26,6 +26,12 @@ PLSQL_Exercises
 │   ├── scenario3_has_sufficient_balance.sql
 │   └── README.md
 │
+├── Exercise5_Triggers/
+│   ├── scenario1_update_customer_last_modified.sql
+│   ├── scenario2_log_transaction.sql
+│   ├── scenario3_check_transaction_rules.sql
+│   └── README.md
+│
 │
 ├── Sample_Tables_Data.txt
 └── README.md
@@ -69,3 +75,11 @@ Location: `Exercise2_ErrorHandling/`
 - scenario3_has_sufficient_balance.sql – Checks if an account has sufficient balance for a transaction.
 
 Location: `Exercise4_Functions/`
+
+## Exercise 5: Triggers
+
+- scenario1_update_customer_last_modified.sql – Updates LastModified when a customer's record is updated.
+- scenario2_log_transaction.sql – Logs every new transaction in an audit table.
+- scenario3_check_transaction_rules.sql – Ensures valid deposit/withdrawal before inserting into Transactions.
+
+Location: `Exercise5_Triggers/`
