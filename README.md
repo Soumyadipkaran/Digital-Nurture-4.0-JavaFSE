@@ -1,6 +1,7 @@
 # DN4.0-JavaFSE
 ## Hands-on and learning content for Cognizant Digital Nurture 4.0 – Java FSE Track
 
+### Created by Soumyadip Karan.
 
 ## Week 01 
 ```
@@ -128,3 +129,6 @@ week_02/
 ### Extra (Outside Mandatory Hands-On)
 - Exercise 2: Parameterized Logging
 - Exercise 3: Using Different Appenders
+
+
+# Created by Soumyadip Karan for the Digital Nurture 4.0 Java FSE program.
