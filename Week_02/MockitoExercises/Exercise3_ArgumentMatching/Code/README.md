@@ -24,5 +24,4 @@ Exercise3_ArgumentMatching/
     │           └── com/example/
     │               └── AlertServiceTest.java
     ├── pom.xml
-    ├── AlertServiceTest_Output.png
     └── README.md

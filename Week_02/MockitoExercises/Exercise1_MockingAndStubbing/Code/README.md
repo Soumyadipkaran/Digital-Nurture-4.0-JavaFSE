@@ -28,7 +28,6 @@ MockitoExercises/
         │               └── example/
         │                   └── MyServiceTest.java
         ├── pom.xml
-        ├── MyServiceTest_Output.png
         └── README.md
 ```
 

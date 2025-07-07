@@ -14,7 +14,6 @@ Demonstrate how to configure and use multiple logging outputs (appenders) using 
 Exercise3_DifferentAppenders/
 ├── pom.xml
 ├── README.md
-├── AppenderExample_Output.png
 ├── src/
     └── main/
         ├── java/

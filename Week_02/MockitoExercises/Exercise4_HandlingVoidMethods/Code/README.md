@@ -28,7 +28,6 @@ Exercise4_HandlingVoidMethods/
 │       └── java/
 │           └── com/example/
 │               └── UserManagerTest.java
-├── UserManagerTest_Output.png
 ├── README.md
 └── pom.xml
 ```

@@ -9,31 +9,31 @@ Week_01/
 │
 ├── DesignPrinciplesAndPatterns/
 │   ├── Exercise1_SingletonPattern/
-│   │   ├── SingletonPatternExample.java
-│   │   ├── SingletonPattern_Output.png
+│   │   ├── Code
+│   │   ├── Output
 │   │   └── README.md
 │   │
 │   ├── Exercise2_FactoryMethodPattern/
-│   │   ├── FactoryMethodPatternExample.java 
-│   │   ├── FactoryMethodPattern_Output.png 
+│   │   ├── Code
+│   │   ├── Output 
 │   │   └── README.md
 │   │
-│   └── ExtraExerciseOutsideMandatoryHandsOn/
-│       └── ... (Additional practice code/files)
+│   └── AdditionalHandsOn/
+│       └── ... (Additional practice code/Output)
 │
 └── DataStructuresAndAlgorithms/
     ├── Exercise2_EcommercePlatformSearchFunction/
-    │   ├── ECommerceSearch.java
-    │   ├── ECommerceSearch_Output.png
+    │   ├── Code
+    │   ├── Output
     │   └── README.md
     │
     ├── Exercise7_FinancialForecasting/
-    │   ├── FinancialForecast.java
-    │   ├── FinancialForecast_Output.png
+    │   ├── Code
+    │   ├── Output
     │   └── README.md
     │
-    └── ExtraExerciseOutsideMandatoryHandsOn/
-        └── ... (Additional practice code/files)
+    └── AdditionalHandsOn/
+        └── ... (Additional practice code/Output)
 
 ```
 

@@ -14,7 +14,6 @@ Demonstrate how to use parameterized logging with SLF4J.
 Exercise2_ParameterizedLogging/
 ├── pom.xml
 ├── README.md
-├── ParameterizedLoggingExample_Output.png
 └── src/
     └── main/
         └── java/

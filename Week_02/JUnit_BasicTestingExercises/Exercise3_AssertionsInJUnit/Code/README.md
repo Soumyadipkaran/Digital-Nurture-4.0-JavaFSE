@@ -15,7 +15,6 @@ Use various JUnit assertions to validate different test scenarios and verify exp
 Exercise3_AssertionsInJUnit/
 ├── pom.xml
 ├── README.md
-├── AssertionsTest_Output.png
 └── src/
     └── test/
         └── java/

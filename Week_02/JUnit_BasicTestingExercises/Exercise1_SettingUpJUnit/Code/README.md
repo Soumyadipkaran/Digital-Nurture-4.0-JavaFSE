@@ -20,7 +20,6 @@ Set up JUnit in a new Java project and run a basic test to confirm the setup wor
 Exercise1_SettingUpJUnit/
 ├── pom.xml
 ├── README.md
-├── JUnitSetup_Output.png
 └── src/
     └── test/
         └── java/

@@ -19,7 +19,6 @@ Organize JUnit tests using the Arrange-Act-Assert (AAA) pattern, and utilize set
 Exercise4_ArrangeActAssertPattern/
 ├── pom.xml
 ├── README.md
-├── CalculatorTest_Output.png
 └── src/
     ├── main/
     │   └── java/

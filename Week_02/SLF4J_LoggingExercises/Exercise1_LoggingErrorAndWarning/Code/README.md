@@ -16,7 +16,6 @@ Demonstrate how to use SLF4J with Logback to log error and warning messages in a
 Exercise1_LoggingErrorAndWarning/
 ├── pom.xml
 ├── README.md
-├── LoggingExample_Output.java
 └── src/
     └── main/
         └── java/

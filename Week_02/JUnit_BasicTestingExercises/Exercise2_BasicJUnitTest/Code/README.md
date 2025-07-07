@@ -18,7 +18,6 @@ Write unit tests for a simple Java class using JUnit 4.
 Exercise2_BasicJUnitTest/
 ├── pom.xml
 ├── README.md
-├── TemperatureConverterTest_Output.png
 └── src/
     ├── main/
     │   └── java/

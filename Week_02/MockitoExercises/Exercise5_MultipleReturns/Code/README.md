@@ -29,6 +29,5 @@ Exercise5_MultipleReturns/
 │           └── com/example/
 │               └── WeatherServiceTest.java
 ├── README.md
-├── WeatherServiceTest_Output.png
 └── pom.xml
 ```
