@@ -3,7 +3,7 @@
 
 ### Created by Soumyadip Karan.
 
-## Week 01 
+# Week 01 
 ```
 Week_01/
 │
@@ -67,7 +67,7 @@ The following are the mandatory hands-on exercises.
 
 ---
 
-## Week 02
+# Week 02
 ```
 week_02/
 │
