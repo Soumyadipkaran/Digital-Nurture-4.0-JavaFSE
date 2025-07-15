@@ -189,20 +189,20 @@ Week_03/
 Week_04/
 │
 ├── Additional/
-│   └── spring-rest-handson_3/
+│   └── 3_spring-rest-handson/
 │        └── (codes + output)
 │
-├── spring-rest-handson_1/
+├── 1_spring-rest-handson/
 │   ├──Code
 │   ├──Output
 │   └──README.md
 │   
-├── spring-rest-handson_2/
+├── 2_spring-rest-handson/
 │   ├──Code
 │   ├──Output
 │   └──README.md
 │
-├── JWT-handson/
+├── 5_JWT-handson/
     └── (codes + output)
 
 
@@ -211,21 +211,21 @@ Week_04/
 ## This week, I worked on Spring REST, JWT and Spring Security.
 
 
-## spring-rest-handson_1
+## 1_spring-rest-handson
 
 - Hands-on 1 – Create a Spring Web Project using Maven
 - Hands-on 2 – Spring Core – Load SimpleDateFormat from Spring Configuration XML
 
-## spring-rest-handson_2
+## 2_spring-rest-handson
 - Hello World RESTful Web Service
 - REST - Country Web Service
 - REST - Get country based on country code
 - (extra) REST - Get All Countries
 
-## JWT-handson
+## 5_JWT-handson
 - Create authentication service that returns JWT
 
-## Additional important hands-on (spring-rest-handson_3)
+## Additional important hands-on (3_spring-rest-handson)
 
 ---
 
